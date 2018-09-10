@@ -134,7 +134,7 @@ public class Server implements Runnable {
     public  void leaveChat(Client client){
         if (client.getCompanion() != null) {
             try {
-                client.getCompanion().sendMessage("Собеседник вышел из чата");
+                client.getCompanion().sendMessageMyself("Собеседник вышел из чата");
             } catch (IOException e) {
                 e.printStackTrace();
             }

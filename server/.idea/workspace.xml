@@ -24,11 +24,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Server.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/chat/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="115" column="39" lean-forward="false" selection-start-line="115" selection-start-column="39" selection-end-line="115" selection-end-column="39" />
+            <state relative-caret-position="80">
+              <caret line="137" column="32" lean-forward="true" selection-start-line="137" selection-start-column="32" selection-end-line="137" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#closeServer#0;class#Server#0" expanded="false" />
@@ -59,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Agent.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Agent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/chat/Client/Agent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="45" column="5" lean-forward="false" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+            <state relative-caret-position="149">
+              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -120,10 +120,10 @@
         <option value="$PROJECT_DIR$/src/main/java/chat/IdCounter.java" />
         <option value="$PROJECT_DIR$/src/main/java/chat/ParticipantsBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/chat/MonoThreadClientHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/chat/Server.java" />
         <option value="$PROJECT_DIR$/src/main/java/chat/Client/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/chat/Client/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/chat/Client/Agent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/chat/Server.java" />
       </list>
     </option>
   </component>
@@ -963,17 +963,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/chat/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="115" column="39" lean-forward="false" selection-start-line="115" selection-start-column="39" selection-end-line="115" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#closeServer#0;class#Server#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/chat/Client/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
@@ -994,9 +983,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/chat/Client/Agent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="45" column="5" lean-forward="false" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+        <state relative-caret-position="149">
+          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/chat/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="137" column="32" lean-forward="true" selection-start-line="137" selection-start-column="32" selection-end-line="137" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#closeServer#0;class#Server#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
