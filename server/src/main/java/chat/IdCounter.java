@@ -16,7 +16,7 @@ public class IdCounter {
     }
 
     public synchronized int getId(){
-        System.out.println(id+"<- id");
+        //System.out.println(id+"<- id");
         return ++id;
     }
 }

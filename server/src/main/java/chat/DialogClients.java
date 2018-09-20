@@ -3,8 +3,6 @@ package chat;
 import chat.Client.Agent;
 import chat.Client.Client;
 import chat.Client.User;
-
-import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 

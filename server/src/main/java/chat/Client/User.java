@@ -37,7 +37,7 @@ public class User implements Client {
 
     @Override
     public void sendMessageMyself(String message) throws IOException {
-        socket.getOutputStream().write(("сервер: "+message+"\n").getBytes());
+        socket.getOutputStream().write(("server: "+message+"\n").getBytes());
         socket.getOutputStream().flush();
 
     }
@@ -68,18 +68,31 @@ public class User implements Client {
     public void setBufferMessages(String m){
         waitingPutMessages+=name+": "+m+"\n";
     }
+
+    public void clearBuffer(){waitingPutMessages="";}
+
     public String getWaitingMessages() {
         return waitingPutMessages;
     }
 
     @Override
-    public String toString() {
-        return "User{" +
-                "name='" + name + '\'' +
-                ", socket=" + socket +
-                ", companion=" + companion.getName() +
-                ", id=" + id +
-                ", waitingPutMessages='" + waitingPutMessages + '\'' +
-                '}';
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+
+        if (name != user.getName()) return false;
+        return socket == user.getSocket();
     }
+
+//    @Override
+//    public String toString() {
+//        return "User{" +
+//                "name='" + name + '\'' +
+//                ", socket=" + socket +
+//                ", companion=" + companion.getName() +
+//                ", id=" + id +
+//                ", waitingPutMessages='" + waitingPutMessages + '\'' +
+//                '}';
+//    }
 }

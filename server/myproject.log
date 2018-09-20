@@ -1,0 +1,17 @@
+06:27:06,643 ERROR main Server:run:54 - Address already in use: JVM_Bind
+06:27:19,044 ERROR main Server:run:54 - Address already in use: JVM_Bind
+07:04:18,586 ERROR main Server:<init>:42 - Address already in use: JVM_Bind
+07:07:16,563 ERROR main Server:<init>:42 - Address already in use: JVM_Bind
+07:12:08,939 ERROR main Server:<init>:42 - Address already in use: JVM_Bind
+07:14:01,476 ERROR main Server:<init>:42 - Address already in use: JVM_Bind
+07:14:53,609 ERROR main Server:<init>:42 - Address already in use: JVM_Bind
+07:16:59,093 ERROR main Server:<init>:42 - Address already in use: JVM_Bind
+07:17:35,980 ERROR main Server:<init>:42 - Address already in use: JVM_Bind
+07:17:49,005 ERROR main Server:<init>:42 - Address already in use: JVM_Bind
+08:21:39,543 ERROR Thread-2 MonoThreadClientHandler:handlingMessage:63 - Socket is closed
+08:53:58,842 ERROR Thread-2 MonoThreadClientHandler:handlingMessage:63 - Connection reset by peer: socket write error
+09:04:59,681 ERROR Thread-9 Server:sendBufMessage:101 - Connection reset by peer: socket write error
+09:06:30,246 ERROR Thread-9 MonoThreadClientHandler:handlingMessage:63 - Connection reset by peer: socket write error
+09:09:02,073 ERROR Thread-11 Server:sendBufMessage:101 - Socket is closed
+09:26:06,240 ERROR Thread-3 MonoThreadClientHandler:handlingMessage:63 - Socket is closed
+09:30:38,814 ERROR Thread-1 MonoThreadClientHandler:handlingMessage:63 - Socket is closed

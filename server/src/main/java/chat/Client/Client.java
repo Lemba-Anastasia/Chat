@@ -1,7 +1,5 @@
 package chat.Client;
 
-import chat.DialogClients;
-
 import java.io.IOException;
 import java.net.Socket;
 
@@ -17,4 +15,5 @@ public interface Client {
     Client getCompanion();
     void setCompanion(Client companion);
     void sendMessageMyself(String message) throws IOException;
+
 }

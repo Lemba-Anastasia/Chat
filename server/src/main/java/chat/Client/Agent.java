@@ -1,7 +1,6 @@
 package chat.Client;
 
 import chat.IdCounter;
-
 import java.io.IOException;
 import java.net.Socket;
 import java.util.ArrayList;
@@ -26,7 +25,6 @@ public class Agent implements Client{
         return (companion!=null);
     }
 
-
     @Override
     public Socket getSocket() {
         return socket;
@@ -47,7 +45,7 @@ public class Agent implements Client{
 
     @Override
     public void sendMessageMyself(String message) throws IOException {
-        socket.getOutputStream().write(("сервер: "+message+"\n").getBytes());
+        socket.getOutputStream().write(("server: "+message+"\n").getBytes());
         socket.getOutputStream().flush();
 
     }
@@ -68,12 +66,16 @@ public class Agent implements Client{
     }
 
     @Override
-    public String toString() {
-        return "Agent{" +
-                "name='" + name + '\'' +
-                ", socket=" + socket +
-                ", id=" + id +
-                ", companion=" + companion.getName() +
-                '}';
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Agent agent = (Agent) o;
+
+        if (name != agent.getName()) return false;
+        return socket == agent.getSocket();
+    }
+    public void sendByfMessage(String message) throws IOException{
+        socket.getOutputStream().write((message+"\n").getBytes());
+        socket.getOutputStream().flush();
     }
 }

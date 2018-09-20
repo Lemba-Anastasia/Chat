@@ -29,27 +29,27 @@ public class ParticipantsBase {
             agentList.add(agent);
         }
     }
-    public void removeAgent(Agent agent){
-        agentList.remove(agent);
+
+    public List<User> getUserList() {
+        return userList;
     }
 
-    public Agent getFreeAgent(){
-        for(Agent a:agentList){
-            if(!a.isBusy()){
-                return a;
+    public List<Agent> getAgentList() {
+        return agentList;
+    }
+
+    public void remove(Client client) {
+        for(User u:userList){
+            if(u==client){
+                userList.remove(u);
+                return;
             }
         }
-        return null;
-    }
-
-
-    public Client seachClientById(int id) {
-        for(Client client:userList){
-            if(client.getId()==id) return client;
+        for(Agent a:agentList){
+            if(a==client){
+                agentList.remove(a);
+                return;
+            }
         }
-        for (Client client:agentList){
-            if(client.getId()==id) return client;
-        }
-        return null;
     }
 }
